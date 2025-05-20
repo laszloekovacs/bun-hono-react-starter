@@ -13,3 +13,8 @@ bun run index.ts
 ```
 
 This project was created using `bun init` in bun v1.2.13. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+
+
+## stuff to do
+- websocket hmr trigger
+- separate out build script for client hydrate script? Embed it?

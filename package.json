@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "bun build ./app/client.tsx --outfile ./public/client.js --format esm --target browser",
-    "start": "bun run build && bun run ./app/server.ts"
+    "start": "bun run build && bun run ./app/server.ts",
+    "dev": "bun --watch run ./app/server.ts"
   },
 
   "devDependencies": {

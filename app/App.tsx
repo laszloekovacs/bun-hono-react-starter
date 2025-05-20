@@ -9,6 +9,8 @@ const Hello = () => {
 			<body>
 				<div id="root">
 					<h1>Hello from Hono, React and Bun!</h1>
+					<small>Start building something amazing!</small>
+					<p>working</p>
 				</div>
 				<script src="/public/client.js"></script>
 			</body>

@@ -3,8 +3,11 @@ import { renderToReadableStream } from 'react-dom/server'
 import { createElement } from 'react'
 import App from './App'
 import { serveStatic } from 'hono/bun'
+import { logger } from 'hono/logger'
 
 const app = new Hono()
+
+app.use(logger())
 
 app.get('/', async (c) => {
 	//Create the app root element

@@ -15884,10 +15884,15 @@ var Hello = () => {
         children: [
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
             id: "root",
-            children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h1", {
-              children: "Hello from Hono, React and Bun!"
-            }, undefined, false, undefined, this)
-          }, undefined, false, undefined, this),
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h1", {
+                children: "Hello from Hono, React and Bun!"
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("small", {
+                children: "start building something amazing!"
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("script", {
             src: "/public/client.js"
           }, undefined, false, undefined, this)
