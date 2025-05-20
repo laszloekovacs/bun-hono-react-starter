@@ -1,0 +1,24 @@
+{
+  "name": "bun-hono-react-starter",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun build ./app/client.tsx --outfile ./public/client.js --format esm --target browser",
+    "start": "bun run build && bun run ./app/server.ts"
+  },
+
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "hono": "^4.7.10",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
