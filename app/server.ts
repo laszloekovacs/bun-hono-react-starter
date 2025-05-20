@@ -9,24 +9,22 @@ const app = new Hono()
 
 app.use(logger())
 
-const hydrationScript = `
-import { hydrateRoot } from 'react-dom/client'
-import React from 'react'
-import App from './App'
-
-hydrateRoot(
-  document.getElementById('root'),
-  React.createElement(App)
-)
-`
-
 app.get('/', async (c) => {
 	//Create the app root element
 	const appElement = createElement(App)
 
 	// render to pipe, add hydration script
 	const stream = await renderToReadableStream(appElement, {
-		bootstrapScriptContent: hydrationScript,
+		bootstrapScriptContent: `
+		import { hydrateRoot } from 'react-dom/client'
+		import React from 'react'
+		import App from './App'
+		
+		hydrateRoot(
+		  document.getElementById('root'),
+		  React.createElement(App)
+		)
+		`,
 	})
 
 	return new Response(stream, {
