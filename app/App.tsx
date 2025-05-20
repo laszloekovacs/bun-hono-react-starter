@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hello = () => {
+const App = () => {
 	return (
 		<html>
 			<head>
@@ -18,4 +18,4 @@ const Hello = () => {
 	)
 }
 
-export default Hello
+export default App
