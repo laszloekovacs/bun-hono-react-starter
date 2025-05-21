@@ -20,3 +20,4 @@ This project was created using `bun init` in bun v1.2.13. [Bun](https://bun.sh) 
 - separate out build script for client hydrate script? Embed it?
 - error handling
 - timeout handling (abort controller triggered by setTimeout)
+- add a bit more stylish starter page
