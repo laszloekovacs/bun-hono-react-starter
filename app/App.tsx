@@ -10,7 +10,7 @@ const App = () => {
 				<div id="root">
 					<h1>Hello from Hono, React and Bun!</h1>
 					<small>Start building something amazing!</small>
-					<p>working</p>
+					<small>if you happen to use this, let me know about your cool project!</small>
 				</div>
 				<script src="/public/client.js"></script>
 			</body>
